@@ -1,0 +1,194 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+	font-size: 14px;
+	line-height: 1.6;
+	font-family: 'Lato', sans-serif;
+
+	color: #24292d
+}
+
+html,
+body {
+	/*because we're using fullscreen background images, we need to force the html and body to fill all the available
+	height inside the viewport (so they can display properly)*/
+	height: 100%
+}
+
+header {
+	height: 100%;
+	background: #3a4549 url(../images/mountain.jpg) no-repeat center;
+	background-size: cover;
+	/*if we use display: flex; we can set margin: auto on the logo and it will position itself perfectly in the middle.*/
+}
+
+h1 {
+	position: absolute;
+	/*position absolute is much similar to fixed in that it takes an element out from the flow of the page*/
+	/*when we use ;eft and top properties to position the logo, it will position it from its top left hand corner
+	(offsetting	the logo massively*/
+	left: 50%;
+	top: 50%;
+	/*we use the trick of applying negative margins to pull the logo back over (taking the logo width and height,
+	and dividing it by 2)*/
+	margin-left: -250px;
+	margin-top: -132px;
+}
+
+.hero-arrow {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -22px;
+}
+
+.announcement {
+	background-color: #e0e3e6;
+	text-align: center;
+	/*uses the same trick as teatime (where the bottom of the iphone is chopped off)*/
+	height: 520px;
+	overflow: hidden;
+}
+
+h2 {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 300;
+
+	margin: 50px 0;
+}
+
+.subscribe {
+	text-align: center;
+	padding: 50px 0;
+	background-color: #f3f4f5;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.content {
+	float: left;
+	width: 60%;
+	padding: 200px 80px 0 0;
+}
+
+.phone {
+	float: right;
+	width: 40%;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.container2 {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.content2 {
+	float: right;
+	width: 60%;
+	padding: 200px 80px 0 0;
+}
+
+.phone2 {
+	float: left;
+	width: 40%;
+}
+
+.scroll-effect {
+	height:100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+h3 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+	color: #fff;
+	font-size: 50px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+
+.scroll-effect.blue-lagoon {
+	background-image: url('../images/blue-lagoon.jpg');
+}
+
+.scroll-effect.pool {
+	background-image: url('../images/pool.jpg');
+}
+
+.scroll-effect.forest {
+	background-image: url('../images/forest.jpg');
+}
+
+.scroll-effect.boat {
+	background-image: url('../images/boat.jpg');
+}
+
+.scroll-effect.river {
+	background-image: url('../images/river.jpg');
+}
+
+footer small {
+	color: #e0e3e6;
+	padding: 0 10px 0 0;
+}
+
+footer a {
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+footer {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+
+input {
+	color: #24292d;
+	font-size: 14px;
+	line-height: 1.6;
+	font-family: 'Lato', sans-serif;
+	padding: 10px 15px;
+	border: 2px solid #000;
+	background: #fff;
+	margin: 10px;
+	outline: none;
+	transition: all 200ms linear;
+}
+
+input:focus {
+	border-color: #16B898
+}
+
+input[type="submit"] {
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	border-color: #16B898;
+	color: #16B898
+}
+
+.arrow {
+	display: inline-block;
+	height: 29px;
+	width: 29px;
+	background-image: url(../images/green-arrow.png);
+}
